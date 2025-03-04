@@ -32,6 +32,13 @@ cd deepfake-detection
 pip install -r requirements.txt
 ```
 
+## Dataset
+
+This project uses the "1000 Videos Split" dataset available on Kaggle:
+[https://www.kaggle.com/datasets/nanduncs/1000-videos-split](https://www.kaggle.com/datasets/nanduncs/1000-videos-split)
+
+The dataset contains a collection of real and fake videos split into training, testing, and validation sets, making it ideal for training and evaluating deepfake detection models.
+
 ## Usage
 
 ### Training the Model
@@ -126,3 +133,9 @@ The system's performance depends on:
 - Support for multi-modal analysis (audio + video)
 - Temporal analysis across frame sequences
 - Attention mechanisms for focusing on manipulation artifacts
+
+## Acknowledgements
+
+- The facenet-pytorch library for MTCNN implementation
+- PyTorch for the pretrained ResNet-50 model
+- Dataset provided by [1000 Videos Split](https://www.kaggle.com/datasets/nanduncs/1000-videos-split) on Kaggle
